@@ -27,8 +27,8 @@ class Reproductor extends Multimedia{
         moduloPlay.reproducir(this.getUrl(),this.id)
     }
 
-    setInicio(){
-        document.querySelector(`#${this.id}`).setAttribute('src',this.getUrl()+`?start=${240}`)        
+    setInicio(tiempo){
+        document.querySelector(`#${this.id}`).setAttribute('src',this.getUrl()+`?start=${tiempo}`)        
     }
 };
 
@@ -42,5 +42,5 @@ pelicula.playMultimedia()
 serie.playMultimedia()
 
 
-pelicula.setInicio()
+pelicula.setInicio(240)
 
